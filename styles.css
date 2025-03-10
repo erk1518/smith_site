@@ -1045,7 +1045,7 @@ body{
     /* padding: 30px; */
     border-top: 2px solid whitesmoke;
     border-bottom: 2px solid whitesmoke;
-    background-color: 55,68,64,0.98;
+    background-color: (55,68,64,0.98);
     margin-bottom: 30px;
     
 }
