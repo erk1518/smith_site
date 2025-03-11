@@ -21,7 +21,7 @@
             <!-- <img src="C:\Users\erk15\Desktop\GunSmith\images\logo-placeholder-image.png" alt="logo for business" id="logoImg" style="object-fit:fill; width:140%; height: 140%;" usemap="#workmap"> -->
             <!-- <img src="images/Company Logo-Firearms.svg" alt="logo for business" id="logoImg" style="object-fit:fill; width:140%; height: 140%;" usemap="#workmap"> -->
 
-            <img src="images/logo.png" alt="logo for business" id="logoImg" style="object-fit:fill; width:100%; height: 100%;" usemap="#workmap">
+            <img src="images/logo.png" alt="logo for business" id="logoImg" style="object-fit:fill; max-width: 150px; height: auto" usemap="#workmap">
         
 
 
@@ -202,28 +202,32 @@
             }
         }
 
-        // w3 school solution
-        window.onscroll = function() {scrollFunction()};
-
-        function scrollFunction()
-        {
-            if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
-                head.style.fontSize = "30px";
-                head.style.height = "70px";
-                head.style.paddingRight = "0px";
-                head.style.paddingLeft = "0px";
-                // head.style.padding = "3px";
-                // head.style.margin-top = "20px";
-            }
-            else
-            {
-                head.style.fontSize = "90px";
-                head.style.height = "120px";
-                head.style.paddingRight = "0px";
-                head.style.paddingLeft = "0px";
-                    // head.style.padding = "10px";
-            }
+         // w3 school solution
+         window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction()
+    {
+        if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
+            head.style.fontSize = "30px";
+            head.style.height = "70px";
+            head.style.paddingRight = "0px";
+            head.style.paddingLeft = "0px";
+            imgLogo.style.maxWidth = "80px"
+            imgLogo.style.transition = ".03"
+            // head.style.padding = "3px";
+            // head.style.margin-top = "20px";
         }
+        else
+        {
+            head.style.fontSize = "90px";
+            head.style.height = "120px";
+            head.style.paddingRight = "0px";
+            head.style.paddingLeft = "0px";
+            imgLogo.style.maxWidth = "150px"
+             imgLogo.style.transition = ".03"
+                // head.style.padding = "10px";
+        }
+    }
     </script>
 </body>
 </html>
